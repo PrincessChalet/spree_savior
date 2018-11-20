@@ -37,11 +37,18 @@ gem 'fog-aws'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+# Spree static pages
+#gem 'globalize', github: 'globalize/globalize'
+#gem 'spree_i18n', github: 'spree-contrib/spree_i18n'
+#gem 'spree_globalize', github: 'spree-contrib/spree_globalize', branch: 'master'
+#gem 'spree_static_content', github: 'spree-contrib/spree_static_content'
+#gem 'activemodel-serializers-xml'
+
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 
 group :production do 
-  gem 'pg'
+#  gem 'pg'
   gem 'rails_12factor'
 end
 

@@ -60,6 +60,7 @@ GEM
       execjs
     awesome_nested_set (3.1.4)
       activerecord (>= 4.0.0, < 5.3)
+    bcrypt (3.1.12)
     bcrypt (3.1.12-x86-mingw32)
     bindex (0.5.0)
     bootsnap (1.3.2)
@@ -119,6 +120,7 @@ GEM
     excon (0.62.0)
     execjs (2.7.0)
     ffaker (2.10.0)
+    ffi (1.9.25)
     ffi (1.9.25-x86-mingw32)
     fog-aws (3.3.0)
       fog-core (~> 2.1)
@@ -188,9 +190,12 @@ GEM
       money (~> 6.12)
     money (6.13.1)
       i18n (>= 0.6.4, <= 2)
+    msgpack (1.2.4)
     msgpack (1.2.4-x86-mingw32)
     multi_json (1.13.1)
     nio4r (2.3.1)
+    nokogiri (1.8.5)
+      mini_portile2 (~> 2.3.0)
     nokogiri (1.8.5-x86-mingw32)
       mini_portile2 (~> 2.3.0)
     orm_adapter (0.5.0)
@@ -202,7 +207,6 @@ GEM
       terrapin (~> 0.6.0)
     paranoia (2.4.1)
       activerecord (>= 4.0, < 5.3)
-    pg (1.1.3-x86-mingw32)
     polyglot (0.3.5)
     premailer (1.11.1)
       addressable
@@ -349,6 +353,7 @@ GEM
       actionpack (>= 4.0)
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
+    sqlite3 (1.3.13)
     sqlite3 (1.3.13-x86-mingw32)
     state_machines (0.5.0)
     state_machines-activemodel (0.5.1)
@@ -395,6 +400,7 @@ GEM
       nokogiri (~> 1.8)
 
 PLATFORMS
+  ruby
   x86-mingw32
 
 DEPENDENCIES
@@ -407,7 +413,6 @@ DEPENDENCIES
   execjs
   fog-aws
   jbuilder (~> 2.5)
-  pg
   puma (~> 3.11)
   rack-timeout
   rails (~> 5.2.1)
@@ -427,4 +432,4 @@ RUBY VERSION
    ruby 2.3.3p222
 
 BUNDLED WITH
-   1.16.6
+   1.17.1
