@@ -35,9 +35,6 @@ gem 'pg'
 #gem 'aws-sdk-3', '< 2.0'
 
 
-
-gem "spree_comments", github: 'spree-contrib/spree_comments'
-
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 
