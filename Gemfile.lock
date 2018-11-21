@@ -207,6 +207,8 @@ GEM
       terrapin (~> 0.6.0)
     paranoia (2.4.1)
       activerecord (>= 4.0, < 5.3)
+    pg (1.1.3)
+    pg (1.1.3-x86-mingw32)
     polyglot (0.3.5)
     premailer (1.11.1)
       addressable
@@ -412,6 +414,7 @@ DEPENDENCIES
   execjs
   fog-aws
   jbuilder (~> 2.5)
+  pg
   puma (~> 3.11)
   rails (~> 5.2.1)
   rails_12factor
