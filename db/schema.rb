@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_11_18_056121) do
+ActiveRecord::Schema.define(version: 2018_11_21_041822) do
 
   create_table "active_storage_attachments", force: :cascade do |t|
     t.string "name", null: false
@@ -118,6 +118,27 @@ ActiveRecord::Schema.define(version: 2018_11_18_056121) do
     t.index ["calculable_id", "calculable_type"], name: "index_spree_calculators_on_calculable_id_and_calculable_type"
     t.index ["deleted_at"], name: "index_spree_calculators_on_deleted_at"
     t.index ["id", "type"], name: "index_spree_calculators_on_id_and_type"
+  end
+
+  create_table "spree_comment_types", force: :cascade do |t|
+    t.string "name"
+    t.string "applies_to"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "spree_comments", force: :cascade do |t|
+    t.string "title", limit: 50
+    t.text "comment"
+    t.string "commentable_type"
+    t.integer "commentable_id"
+    t.integer "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer "comment_type_id"
+    t.index ["commentable_id"], name: "index_spree_comments_on_commentable_id"
+    t.index ["commentable_type"], name: "index_spree_comments_on_commentable_type"
+    t.index ["user_id"], name: "index_spree_comments_on_user_id"
   end
 
   create_table "spree_countries", force: :cascade do |t|
