@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   mount Spree::Core::Engine, at: '/'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
+  
   get 'spree/content/test1'
   get 'spree/content/NutritionalInfo'
   get 'spree/content/Game1'
