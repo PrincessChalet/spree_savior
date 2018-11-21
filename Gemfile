@@ -30,7 +30,7 @@ gem 'spree', '~> 3.6.4'
 gem 'spree_auth_devise', '~> 3.3'
 gem 'spree_gateway', '~> 3.3'
 gem 'fog-aws'
-gem 'pg'
+#gem 'pg'
 #gem 'aws-sdk-3', '< 2.0'
 
 
