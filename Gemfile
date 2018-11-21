@@ -32,6 +32,8 @@ gem 'spree_gateway', '~> 3.3'
 gem 'fog-aws'
 gem 'pg'
 
+
+
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 
