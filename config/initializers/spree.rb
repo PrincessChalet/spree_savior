@@ -44,5 +44,5 @@ attachment_config = {
 attachment_config.each do |key, value|
   Spree::Image.attachment_definitions[:attachment][key.to_sym] = value
 end
-
+end
 Spree.user_class = "Spree::LegacyUser"
