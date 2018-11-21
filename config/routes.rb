@@ -17,9 +17,9 @@ Rails.application.routes.draw do
   end
 
   #get 'spree/content/test1'
-  get 'spree/content/NutritionalInfo'
-  get 'spree/content/Game1'
-  get 'spree/content/Game2'
-  get 'spree/content/Game3'
+  #get 'spree/content/NutritionalInfo'
+  #get 'spree/content/Game1'
+  #get 'spree/content/Game2'
+  #get 'spree/content/Game3'
 
 end
