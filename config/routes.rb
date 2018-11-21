@@ -9,17 +9,11 @@ Rails.application.routes.draw do
   # the default of "spree".
   mount Spree::Core::Engine, at: '/'
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-  Spree::Core::Engine.routes.prepend do
-    get 'spree/content/Game1', :to => 'spree/content/Game1', :as => :Game1
-     get 'spree/content/Game2', :to => 'spree/content/Game2', :as => :Game2
-      get 'spree/content/Game3', :to => 'spree/content/Game3', :as => :Game3
-       get 'spree/content/NutritionalInfo', :to => 'spree/content/NutritionalInfo', :as => :NutritionalInfo
-  end
 
-  #get 'spree/content/test1'
-  #get 'spree/content/NutritionalInfo'
-  #get 'spree/content/Game1'
-  #get 'spree/content/Game2'
-  #get 'spree/content/Game3'
+  get 'spree/content/test1'
+  get 'spree/content/NutritionalInfo'
+  get 'spree/content/Game1'
+  get 'spree/content/Game2'
+  get 'spree/content/Game3'
 
 end
