@@ -30,6 +30,7 @@ gem 'spree', '~> 3.6.4'
 gem 'spree_auth_devise', '~> 3.3'
 gem 'spree_gateway', '~> 3.3'
 gem 'fog-aws'
+gem "spree_comments", github: 'spree-contrib/spree_comments'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
