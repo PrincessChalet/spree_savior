@@ -31,6 +31,7 @@ gem 'spree_auth_devise', '~> 3.3'
 gem 'spree_gateway', '~> 3.3'
 gem 'fog-aws'
 gem 'pg'
+gem 'aws-sdk', '< 2.0'
 
 
 
