@@ -14,9 +14,7 @@
 			}
 
 		$.ajax(settings).done(function (response) {
-		  if(response){
-		  	$("#response").html(response[0].value);
-		  }
+		  document.write(JSON.stringify(JSON.parse(response, null, 2));
 		});
 	</script>
 </div>
