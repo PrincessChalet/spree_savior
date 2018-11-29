@@ -15,9 +15,11 @@
 
 		$.ajax(settings).done(function (response) {
 		  document.write(JSON.stringify(response,null, '\t'));
-		  if (response.hasOwnProperty("id")){
-    		document.write(response.id);             //007
-			}
+		  
+			var content = 'Orders :'+response.orders;
+			content += 'id'+=response.id;
+			$("#api").append(content);
+
 		});
 	</script>
 </div>
