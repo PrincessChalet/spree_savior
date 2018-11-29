@@ -1,0 +1,20 @@
+<h1> Waitstaff </h1>
+
+<div class="container">
+	<script type="text/javascript">
+		var settings = {
+		  "async": true,
+		  "crossDomain": true,
+		  "url": "https://suit-and-thai.herokuapp.com/api/v1/orders?token=708c6f286f0bafc16869e3eb668011c52558ba60c34e0055&q[email_cont]=table14@table14.com&q[s]=number%20desc=,number%20desc",
+		  "method": "GET",
+		  "headers": {
+		    "cache-control": "no-cache",
+		    "Postman-Token": "b0ebadb7-179b-4d76-8db7-04b8c5ac4447"
+		  		}
+			}
+
+		$.ajax(settings).done(function (response) {
+		  document.write(JSON.stringify(response, null, 2));
+		});
+	</script>
+</div>
