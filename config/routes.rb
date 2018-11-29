@@ -18,5 +18,7 @@ Rails.application.routes.draw do
   get 'spree/content/Game3'
   get 'spree/content/customer_home'
   get 'spree/content/games_home'
+  get 'spree/content/coupon_lottery'
+  get 'spree/content/outcome'
 
 end
