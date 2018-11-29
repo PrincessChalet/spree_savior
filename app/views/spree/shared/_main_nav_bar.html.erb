@@ -9,7 +9,7 @@
       <li><%= link_to "Request Help", '../products/request-help?taxon_id=16' %></li>
       <% end %>
 
-      <% if current_spree_user == "ed@snt.com" %>
+      <% if spree_user.email == "ed@snt.com" %>
         <li><a href="/spree/content/waitstaff" class="btn btn-primary">Waitstaff View</a></li> 
       <% end %>
 
