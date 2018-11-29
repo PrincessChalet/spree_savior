@@ -13,6 +13,6 @@ var settings = {
 }
 
 $.ajax(settings).done(function (response) {
-  window.alert(response);
+  document.write(JSON.stringify(response));
 });
 </script>
