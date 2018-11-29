@@ -2,11 +2,27 @@
   <div id="main-nav-bar" class="navbar">
     <ul class="nav navbar-nav" data-hook>
       <li id="home-link" data-hook><%= link_to Spree.t(:home), spree.root_path %></li>
+      
       <% if( (!current_spree_user == "spree@example.com") || (!current_spree_user == "ed@snt.com") || (!current_spree_user == "manager@snt.com") || (!current_spree_user == "eddy@snt.com") || (!current_spree_user == "edd@snt.com") || (!current_spree_user == "kitchen@snt.com") )%>
       <li><a href="/spree/content/games_home" class="btn btn-primary">Games</a></li> 
       <li><%= link_to "Drink Refill", '../products/request-drink-refill?taxon_id=16' %></li>
       <li><%= link_to "Request Help", '../products/request-help?taxon_id=16' %></li>
       <% end %>
+
+      <% if current_spree_user == "ed@snt.com" %>
+        <li><a href="/spree/content/waitstaff" class="btn btn-primary">Waitstaff View</a></li> 
+      <% end %>
+
+
+      <% if current_spree_user == "edd@snt.com" %>
+        <li><a href="/spree/content/waitstaff2" class="btn btn-primary">Waitstaff View</a></li> 
+      <% end %>
+
+      <% if current_spree_user == "eddy@snt.com" %>
+        <li><a href="/spree/content/waitstaff3" class="btn btn-primary">Waitstaff View</a></li> 
+      <% end %>
+
+
     </ul>
     <ul class="nav navbar-nav navbar-right" data-hook>
       <li id="link-to-cart" data-hook>
