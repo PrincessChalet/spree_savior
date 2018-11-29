@@ -413,11 +413,8 @@ DEPENDENCIES
   execjs
   fog-aws
   jbuilder (~> 2.5)
-<<<<<<< HEAD
   jquery-rails (~> 4.3, >= 4.3.1)
   pg
-=======
->>>>>>> 039cabe4bf84c0f8934f831867afeb270b8efb7f
   puma (~> 3.11)
   rails (~> 5.2.1)
   rails_12factor
