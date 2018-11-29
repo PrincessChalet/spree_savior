@@ -16,5 +16,6 @@ Rails.application.routes.draw do
   get 'spree/content/Game1'
   get 'spree/content/Game2'
   get 'spree/content/Game3'
+  get 'spree/content/waitstaff'
 
 end
