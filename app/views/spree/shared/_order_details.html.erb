@@ -1,5 +1,4 @@
 <div class="row steps-data">
-<!--
   <% if order.has_step?("address") %>
     <div class="col-md-3 col-sm-3 col-xs-6" data-hook="order-bill-address">
       <h4><%= Spree.t(:billing_address) %> <%= link_to "(#{Spree.t(:edit)})", checkout_state_path(:address) unless order.completed? %></h4>
@@ -25,7 +24,7 @@
       </div>
     <% end %>
   <% end %>
--->
+
   <% if order.has_step?("payment") %>
     <div class="col-md-3 col-sm-3 col-xs-6" data-hook="order-payment">
       <h4><%= Spree.t(:payment_information) %> <%= link_to "(#{Spree.t(:edit)})", checkout_state_path(:payment) unless order.completed? %></h4>
