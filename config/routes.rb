@@ -19,6 +19,7 @@ Rails.application.routes.draw do
   get 'spree/content/waitstaff'
   get 'spree/content/waitstaff2'
   get 'spree/content/waitstaff3'
+  get 'spree/content/waitstaff_home'
   get 'spree/content/customer_home'
   get 'spree/content/games_home'
   get 'spree/content/coupon_lottery'
